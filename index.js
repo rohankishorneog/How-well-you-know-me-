@@ -8,7 +8,7 @@ var score =0;
 
 function play(question, answer){
   var userAnswer=readlineSync.question(question);
-  if(userAnswer== answer){
+  if(userAnswer.toUpperCase() === answer.toUpperCase()){
     console.log("you are right")
     score=score+1;
   }
